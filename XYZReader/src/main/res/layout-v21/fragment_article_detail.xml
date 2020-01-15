@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        style="@style/ArticleDetailCardViewAppearance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.example.xyzreader.ui.MaxWidthLinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/detail_card_max_width"
+            android:background="#fff"
+            android:elevation="2dp">
+
+
+            <TextView
+                android:id="@+id/article_byline"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/secondaryTextColor"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"/>
+
+            <view
+                android:layout_width="40dp"
+                android:layout_height="1dp"
+                android:background="@color/secondaryTextColor"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="end"/>
+
+            <view
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="72dp"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/article_body"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_inner_horiz_margin"
+                android:layout_marginRight="@dimen/detail_inner_horiz_margin"
+                android:paddingBottom="@dimen/detail_body_bottom_margin"
+                android:textColor="@color/primaryTextColor"
+                android:textColorLink="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:textSize="17sp"
+                android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier" />
+
+        </com.example.xyzreader.ui.MaxWidthLinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

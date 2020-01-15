@@ -6,7 +6,8 @@
     <string name="action_refresh">Refresh</string>
     <string name="action_settings">Settings</string>
     <string name="action_share">Share</string>
-
+    <string name="twice_press_to_exit">Press again to exit</string>
     <string name="up">Up</string>
+    <string name="action_share_text">hello.. come and read here</string>
 
 </resources>
